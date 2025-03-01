@@ -38,7 +38,7 @@
  */
 
 function getCircleArea(r) {
-  // Your implementation here
+  return Math.PI * (r ** 2);
 }
 
 /**
@@ -57,7 +57,13 @@ function getCircleArea(r) {
  */
 
 function greeting(name, time) {
-  // Your implementation here
+  if (time >= 9 && time <= 12) {
+    return 'Good morning, ${name}!';
+  } else if (time >= 13 && time <= 17) {
+    return 'Good afternoon, ${name}!';
+  } else {
+    return "Invalid time. Please provide a time between 9-12 or 13-17."
+  }
 }
 
 /**
